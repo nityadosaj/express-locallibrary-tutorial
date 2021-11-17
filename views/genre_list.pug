@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+
+  ul
+    each title in genre_list
+      li
+        a(href=title.url) #{title.name}
+
+    else
+      li There are no titles.
